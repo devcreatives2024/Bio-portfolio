@@ -8,7 +8,7 @@ import { NavLink } from "react-router-dom";
 function Menubar() {
   return (
     <>
-      <div className="fixed w-full">
+      <div className="fixed w-full z-40 bg-white">
         <div className="flex justify-around items-center h-[92vh]">
           <div className="w-[250px] h-[320px] ">
             <motion.img

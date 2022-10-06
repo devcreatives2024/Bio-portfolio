@@ -5,7 +5,7 @@ function About() {
   return (
     <>
       <div className="relative py-12">
-        <div className="uppercase absolute top-20 left-[50%] text-center translate-x-[-50%] py-24 z-50">
+        <div className="uppercase absolute top-20 left-[50%] text-center translate-x-[-50%] py-24 ">
           <h1 className="text-[84px] leading-none text-[#2a2a2a] font-medium ">
             BenJAmin oddou
           </h1>
