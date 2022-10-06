@@ -1,14 +1,18 @@
 import { motion } from "framer-motion";
-import React from "react";
+import React, { useState } from "react";
 import { BiMenu } from "react-icons/bi";
-import { HiArrowNarrowUp } from "react-icons/hi";
-import { MdDarkMode, MdLightMode } from "react-icons/md";
+import { HiArrowNarrowUp, HiMinus } from "react-icons/hi";
+import { MdClose, MdDarkMode, MdLightMode } from "react-icons/md";
 import Menubar from "./Menubar";
 
 function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+  const handleToggle = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <>
-      <div className="px-6 py-4 fixed w-full flex justify-between">
+      <div className="px-6 py-4 fixed z-50 w-full flex justify-between">
         <div className="w-[50px] h-[50px] ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -41,13 +45,25 @@ function Header() {
           >
             <MdLightMode size="full" />
           </motion.div>
-          <div className="w-[40px] group">
-            <BiMenu className="group-hover:hidden " size="full" />
-            <HiArrowNarrowUp className="group-hover:block hidden" size="full" />
+          <div onClick={handleToggle} className="w-[40px] group cursor-pointer">
+            {isOpen ? (
+              <>
+                <MdClose className="group-hover:hidden " size="full" />
+                <HiMinus className="group-hover:block hidden" size="full" />
+              </>
+            ) : (
+              <>
+                <BiMenu className="group-hover:hidden " size="full" />
+                <HiArrowNarrowUp
+                  className="group-hover:block hidden"
+                  size="full"
+                />
+              </>
+            )}
           </div>
         </div>
       </div>
-      <Menubar />
+      {isOpen && <Menubar />}
     </>
   );
 }
