@@ -3,11 +3,12 @@ import React from "react";
 import { BiMenu } from "react-icons/bi";
 import { HiArrowNarrowUp } from "react-icons/hi";
 import { MdDarkMode, MdLightMode } from "react-icons/md";
+import Menubar from "./Menubar";
 
 function Header() {
   return (
     <>
-      <div className="px-6 py-4 flex justify-between">
+      <div className="px-6 py-4 fixed w-full flex justify-between">
         <div className="w-[50px] h-[50px] ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -46,6 +47,7 @@ function Header() {
           </div>
         </div>
       </div>
+      <Menubar />
     </>
   );
 }
