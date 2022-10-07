@@ -5,10 +5,12 @@ import { MdOutlineAlternateEmail } from "react-icons/md";
 function Contract() {
   return (
     <>
-      <div className="px-[250px] ">
+      <div className="px-[50px] sm:px-[120px] md:px-[180px] lg:px-[200px] xl:px-[250px] ">
         {/* contranct section  */}
         <div className="text-[#2a2a2a] pb-8 ">
-          <h2 className=" font-medium uppercase text-[38px] ">me contacter</h2>
+          <h2 className=" font-medium uppercase text-[24px] lg:text-[30px] xl:text-[38px]">
+            me contacter
+          </h2>
           <p className="text-[16px]">
             Champs Obligatoires <span className="text-red-500">*</span>
           </p>
@@ -110,8 +112,8 @@ function Contract() {
           </form>
         </div>
         {/* footer section  */}
-        <div className="flex justify-between border-t-2 mt-12 py-6 border-[#2a2a2a]">
-          <div className="flex space-x-8">
+        <div className="sm:flex sm:justify-between border-t-2 mt-12 py-6 border-[#2a2a2a]">
+          <div className="hidden sm:flex space-x-8">
             <div className="w-[24px] h-[24px]">
               <AiFillInstagram
                 className="hover:scale-125 transition duration-500"
@@ -132,7 +134,7 @@ function Contract() {
             </div>
           </div>
           <div>
-            <p className="text-[16px] text-[#2a2a2a] ">
+            <p className="text-[16px] text-center sm:text-end text-[#2a2a2a] ">
               © 2022 Images par <b>Benjamin Oddou</b>{" "}
             </p>
           </div>
