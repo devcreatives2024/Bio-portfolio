@@ -1,9 +1,11 @@
 import React from "react";
+import { HiArrowRight } from "react-icons/hi";
 import { MdKeyboardArrowRight } from "react-icons/md";
 
 function About() {
   return (
     <>
+      {/* about section  */}
       <div className="relative py-12">
         <div className="uppercase absolute top-20 left-[50%] text-center translate-x-[-50%] py-24 ">
           <h1 className="text-[84px] leading-none text-[#2a2a2a] font-medium ">
@@ -35,6 +37,34 @@ function About() {
             </span>
             <span className="uppercase text-[#2a2a2a] font-bold">Reserver</span>
           </button>
+        </div>
+      </div>
+      {/* info section  */}
+      <div className="py-32">
+        <div className="text-center space-y-8">
+          <p className="text-[47px]  font-thin space-y-4 text-[#2a2a2a] ">
+            <span className="block">
+              Pour moi,
+              <i className="font-normal"> la photographie </i>
+              représente le
+            </span>
+            <span className="block">
+              moyen de matérialiser nos
+              <i className="font-normal"> souvenirs </i>
+            </span>
+            <span className="block">
+              et nos <i className="font-normal"> émotions vécues </i>{" "}
+            </span>
+          </p>
+          <div>
+            <hr className="h-[5px] w-[90px] mx-auto bg-[#2a2a2a]  " />
+          </div>
+          <div className="flex justify-center">
+            <button className="text-[26px] group font-medium uppercase flex space-x-2 text-[#2a2a2a] ">
+              <span>À propos de Benjamin</span>{" "}
+              <HiArrowRight className="rotate-[-45deg] group-hover:rotate-[0deg] transition duration-500 " />
+            </button>
+          </div>
         </div>
       </div>
     </>
