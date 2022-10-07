@@ -1,9 +1,12 @@
 import React from "react";
+import { AiFillInstagram, AiFillYoutube } from "react-icons/ai";
+import { MdOutlineAlternateEmail } from "react-icons/md";
 
 function Contract() {
   return (
     <>
-      <div className="px-[250px] pb-12">
+      <div className="px-[250px] ">
+        {/* contranct section  */}
         <div className="text-[#2a2a2a] pb-8 ">
           <h2 className=" font-medium uppercase text-[38px] ">me contacter</h2>
           <p className="text-[16px]">
@@ -93,12 +96,40 @@ function Contract() {
                 </label>
               </div>
             </div>
-            <div>
-              <button className="w-full py-2 mt-6 bg-[#2a2a2a] hover:bg-opacity-80 text-white ">
+            <div className="py-6">
+              <button className="w-full py-2 bg-[#2a2a2a] hover:bg-opacity-80 text-white ">
                 Envoyer
               </button>
             </div>
           </form>
+        </div>
+        {/* footer section  */}
+        <div className="flex justify-between border-t-2 mt-12 py-6 border-[#2a2a2a]">
+          <div className="flex space-x-8">
+            <div className="w-[24px] h-[24px]">
+              <AiFillInstagram
+                className="hover:scale-125 transition duration-500"
+                size="full"
+              />
+            </div>
+            <div className="w-[24px] h-[24px]">
+              <AiFillYoutube
+                className="hover:scale-125 transition duration-500"
+                size="full"
+              />
+            </div>
+            <div className="w-[24px] h-[24px]">
+              <MdOutlineAlternateEmail
+                className="hover:scale-125 transition duration-500"
+                size="full"
+              />
+            </div>
+          </div>
+          <div>
+            <p className="text-[16px] text-[#2a2a2a] ">
+              © 2022 Images par <b>Benjamin Oddou</b>{" "}
+            </p>
+          </div>
         </div>
       </div>
     </>
