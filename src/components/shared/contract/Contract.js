@@ -16,8 +16,8 @@ function Contract() {
         <div>
           <form>
             <div className="space-y-4">
-              <div class="flex justify-between">
-                <div class="relative w-[48%]">
+              <div className="flex justify-between">
+                <div className="relative w-[48%]">
                   <input
                     className="w-full border border-black p-[8px]"
                     type="text"
@@ -25,11 +25,11 @@ function Contract() {
                     placeholder="Prénom"
                     required
                   />
-                  <span class="absolute text-red-500 right-[-10px] top-0">
+                  <span className="absolute text-red-500 right-[-10px] top-0">
                     *
                   </span>
                 </div>
-                <div class="relative w-[48%]">
+                <div className="relative w-[48%]">
                   <input
                     className="w-full border border-black p-[8px]"
                     type="text"
@@ -38,7 +38,7 @@ function Contract() {
                   />
                 </div>
               </div>
-              <div class="relative w-full">
+              <div className="relative w-full">
                 <input
                   className="w-full border border-black p-[8px]"
                   type="email"
@@ -46,9 +46,11 @@ function Contract() {
                   placeholder="Address Mail"
                   required
                 />
-                <span class="absolute text-red-500 right-[-10px] top-0">*</span>
+                <span className="absolute text-red-500 right-[-10px] top-0">
+                  *
+                </span>
               </div>
-              <div class="relative w-full">
+              <div className="relative w-full">
                 <select
                   className="w-full border border-black p-[8px]"
                   name="Object"
@@ -66,9 +68,11 @@ function Contract() {
                   <option value="Séance Solo">Séance Solo</option>
                   <option value="Autres Demandes">Autres</option>
                 </select>
-                <span class="absolute text-red-500 right-[-10px] top-0">*</span>
+                <span className="absolute text-red-500 right-[-10px] top-0">
+                  *
+                </span>
               </div>
-              <div class="relative w-full">
+              <div className="relative w-full">
                 <textarea
                   className="w-full border border-black p-[8px]"
                   type="text"
@@ -77,7 +81,9 @@ function Contract() {
                   placeholder="Message"
                   required
                 />
-                <span class="absolute text-red-500 right-[-10px] top-0">*</span>
+                <span className="absolute text-red-500 right-[-10px] top-0">
+                  *
+                </span>
               </div>
             </div>
             <div className="pt-6">
@@ -91,7 +97,7 @@ function Contract() {
                   id="check"
                   required
                 />
-                <label for="check" className="text-[16px]">
+                <label htmlFor="check" className="text-[16px]">
                   Je consens à transmettre mes informations à : Benjamin Oddou
                 </label>
               </div>
