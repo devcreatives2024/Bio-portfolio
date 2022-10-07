@@ -40,7 +40,7 @@ function Menubar() {
             />
           </div>
         </div>
-        <div className="flex justify-center items-center space-x-16">
+        <div className="flex justify-center items-center space-x-16 pb-8">
           <div className="w-[30px] h-[24px]">
             <BsInstagram size="full" />
           </div>
